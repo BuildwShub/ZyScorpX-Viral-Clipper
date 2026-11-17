@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shortsclip"
+version = "0.1.0"
+description = "Clip YouTube/Twitch streams into viral 9:16 shorts with karaoke subtitles"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["yt-dlp[default]", "faster-whisper>=1.0", "numpy"]
+
+[project.scripts]
+shortsclip = "shortsclip.cli:main"
+
+[tool.setuptools]
+packages = ["shortsclip"]

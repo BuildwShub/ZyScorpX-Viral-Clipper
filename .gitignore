@@ -1,0 +1,15 @@
+# Never commit login cookies
+cookies*.txt
+*.cookies
+# Media and build output
+*.mp4
+*.mkv
+*.webm
+*.m4a
+*.wav
+*.ass
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/
