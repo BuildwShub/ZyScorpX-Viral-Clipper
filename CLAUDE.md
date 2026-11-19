@@ -105,7 +105,7 @@ download them, because the cloud container is deleted after inactivity.
 - Install the Montserrat font with `apt-get install -y fonts-montserrat` if `fc-list | grep Montserrat` is empty.
 - Live streams: `--live-from-start` cannot do `--download-sections`. Hard-link the fragment files before
   stopping yt-dlp, and never `rm full.*` while it may be merging.
-- The GitHub repo is `BuildwShub/viral-shorts-clipper`. Do **not** add a `Co-Authored-By: Claude` line to
+- The GitHub repo is `BuildwShub/ZyScorpX-Viral-Clipper`. Do **not** add a `Co-Authored-By: Claude` line to
   commits (the user removed it from Contributors).
 
 ## History (already published, do not repeat)

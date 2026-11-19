@@ -38,7 +38,7 @@ sudo apt install python3 python3-pip ffmpeg nodejs fonts-montserrat
 ### Then, on every OS
 
 ```bash
-git clone https://github.com/BuildwShub/viral-shorts-clipper.git
+git clone https://github.com/BuildwShub/ZyScorpX-Viral-Clipper.git
 cd viral-shorts-clipper
 pip install -e .
 ```
