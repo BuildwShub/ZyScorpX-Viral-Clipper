@@ -93,6 +93,24 @@ download them, because the cloud container is deleted after inactivity.
 - Pick frames by extracting exact timestamps with `ffmpeg -ss T -i src -frames:v 1` and viewing them.
   (Contact sheets built with the `fps=` filter label frames about one step early, so do not trust their labels.)
 
+## REJECTED: never make videos like these again (2026-11-20)
+
+The user called three 16:9 "dialogue montages" cut from Hollow's GTA 6 Part 2 (x9GPhT9sV-U), titled
+"No Second Chances", "Rent Day" and "Life in the Keys", **utter nonsense: no hook, no attachment, no creativity,
+wasted tokens.** What made them bad, so do the opposite:
+- Slow cold opens ("ZYSCORPX PRESENTS" over a calm shot) and 15–25 s of talking before anything happened.
+  The best moment (a bridge jump) was buried at 27 s.
+- Dialogue lines picked because they passed verification, not because they told a story. Mid-scene
+  fragments with no setup, stakes or payoff.
+- Dull footage: dark scenes, walking, shop interiors, driving shot from behind the character.
+- Following the earlier "approved recipe" mechanically instead of judging whether a viewer would stop scrolling.
+
+Rules from now on:
+- The first 1–2 seconds must be the most striking moment or a sharp question/claim. No logo/"presents" intro.
+- Every video needs one clear idea a viewer can repeat in a sentence, with a payoff at the end.
+- Before rendering anything, send the user the concept, hook, and shot outline (with timestamps) and get
+  approval. Never batch-produce several videos on an unapproved idea.
+
 ## Environment gotchas (cloud container)
 
 - YouTube bot check: yt-dlp needs a cookies file from a throwaway account in `/root/.config/yt-dlp/cookies.txt`
