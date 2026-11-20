@@ -102,10 +102,22 @@ recipe.
 
 ## Channel outro (add to EVERY video, short and reel)
 
-Every deliverable must end with the user's own channel outro clip. The user will supply it. Until it is
-saved here, ask the user for it before rendering any video. When it arrives, describe it here (length,
-resolution, audio) and keep the file outside this public repo if it contains third-party footage or music.
-For 9:16 deliverables, make a vertical version of the outro and get the user's approval on it once.
+Every deliverable must end with the user's channel outro. Add it as the last step of every render:
+
+    python3 -m shortsclip.outro append final.mp4 final_with_outro.mp4 --music song.wav --music-at <song pos at video end>
+
+- **What it is:** the user's approved end card (the last 5 s of "02_GTA6_Trailer_Cut_ZyScorpX.mp4", uploaded
+  2026-11-20 as "ZyScorpX_Outro.mp4", 1920x1080, 30 fps, 4.6 s): a round scorpion avatar with a pink glow
+  (`assets/zyscorpx_avatar.jpg`), the ZYSCORPX.TV wordmark in Montserrat Black Italic (white, pink X, yellow
+  .TV), "FOLLOW FOR MORE GTA 6" with a pink underline, and IG / YT / X rows, over a blurred, darkened copy of
+  the video's last shot. `shortsclip/outro.py` rebuilds it to match the original pixel layout. The card fades
+  in over 0.6 s, the picture crossfades in over 0.35 s, and it holds for 5 s.
+- **Audio:** the soundtrack continues under the outro (`--music`/`--music-at`) and fades out between 2.5 s and
+  3.1 s, then silence, like the original. Without `--music`, the video's own audio crossfades to silence.
+- **Layout:** 16:9 videos get the original side-by-side layout. 9:16 shorts and reels get a stacked, centred
+  version (avatar on top, all text inside the IG grid area y 240–1680). Previews were sent to the user on
+  2026-11-20; if the user asks for changes to the vertical version, record them here.
+- The original clip is not committed (it contains the old video's AURIX232 music and a game frame).
 
 ## REJECTED: never make videos like these again (2026-11-20)
 
