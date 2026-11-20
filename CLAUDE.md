@@ -95,7 +95,8 @@ download them, because the cloud container is deleted after inactivity.
 
 ## Cinematic videos: one reference only
 
-Whenever the user asks for a cinematic video, read `reference/CINEMATIC_STYLE.md` first and match it: a
+Whenever the user asks for a cinematic video, follow `reference/CINEMATIC_PLAYBOOK.md` (the complete,
+self-contained brief: workflow, pipeline, audio, QA, outro, deliverables) and `reference/CINEMATIC_STYLE.md`. Match it: a
 hook question, a nostalgia-to-turn-to-drop arc, kinetic mixed-font typography, golden-hour/neon colour, and
 beat-synced rapid cuts. It is the only approved cinematic reference and replaces every earlier cinematic
 recipe.
