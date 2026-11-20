@@ -93,6 +93,20 @@ download them, because the cloud container is deleted after inactivity.
 - Pick frames by extracting exact timestamps with `ffmpeg -ss T -i src -frames:v 1` and viewing them.
   (Contact sheets built with the `fps=` filter label frames about one step early, so do not trust their labels.)
 
+## Cinematic videos: one reference only
+
+Whenever the user asks for a cinematic video, read `reference/CINEMATIC_STYLE.md` first and match it: a
+hook question, a nostalgia-to-turn-to-drop arc, kinetic mixed-font typography, golden-hour/neon colour, and
+beat-synced rapid cuts. It is the only approved cinematic reference and replaces every earlier cinematic
+recipe.
+
+## Channel outro (add to EVERY video, short and reel)
+
+Every deliverable must end with the user's own channel outro clip. The user will supply it. Until it is
+saved here, ask the user for it before rendering any video. When it arrives, describe it here (length,
+resolution, audio) and keep the file outside this public repo if it contains third-party footage or music.
+For 9:16 deliverables, make a vertical version of the outro and get the user's approval on it once.
+
 ## REJECTED: never make videos like these again (2026-11-20)
 
 The user called three 16:9 "dialogue montages" cut from Hollow's GTA 6 Part 2 (x9GPhT9sV-U), titled
