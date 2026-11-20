@@ -111,6 +111,25 @@ Rules from now on:
 - Before rendering anything, send the user the concept, hook, and shot outline (with timestamps) and get
   approval. Never batch-produce several videos on an unapproved idea.
 
+Audio around character dialogue (user complaint: "unprofessional fade in/out, looks like an abrupt cut"):
+- Never drop a hard-cut dialogue clip on top of music. The old setup (30 ms clip fades, 0.12 s music-duck
+  ramps) made the game ambience and music pop in and out.
+- Keep a continuous low game-audio bed under the whole scene, so the background doesn't jump when a line starts.
+  Bring each line in and out with 0.3–0.6 s crossfades, cut at natural pauses, and use J/L cuts (the audio
+  leads or trails the picture cut).
+- Duck the music smoothly (0.4–0.8 s attack/release, sidechain-style), never as an on/off switch.
+- Listen through every dialogue transition before delivery. Checking that Whisper can understand a line is not
+  enough: it must also sound seamless.
+
+Frame drops and lag (user saw stutter in the final cuts):
+- Don't cut every shot separately with `-ss` + `fps=30` and then join the pieces with `concat`. Conversion at
+  each cut can drop or repeat frames. Render the timeline in one pass from the source (or cut at the source's
+  60 fps, convert once at the end), and use `fps` frame-exact cut points.
+- Check source ranges for streaming lag before using them (repeated or frozen frames, e.g. with `mpdecimate`
+  or frame-difference analysis), and skip any stuttering section.
+- Before delivery, run `freezedetect`/`mpdecimate` on the final file and scrub every cut. Any duplicated or
+  dropped frame is a failed render.
+
 ## Environment gotchas (cloud container)
 
 - YouTube bot check: yt-dlp needs a cookies file from a throwaway account in `/root/.config/yt-dlp/cookies.txt`
